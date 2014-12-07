@@ -65,12 +65,10 @@ public class Copie {
 	public void setIdMatiere(String idMatiere) {
 		this.idMatiere = idMatiere;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Copie [id=" + id + ", adresse=" + adresse + ", note=" + note
 				+ ", idEtudiant=" + idEtudiant + ", idMatiere=" + idMatiere + "]";
 	}
-	
-	
 }

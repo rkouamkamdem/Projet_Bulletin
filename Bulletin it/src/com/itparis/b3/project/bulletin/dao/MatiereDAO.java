@@ -15,7 +15,7 @@ public class MatiereDAO {
 			
 			ArrayList<Matiere> listMatiere = new ArrayList<Matiere>();
 			
-			String req = "SELECT num, no, nom, age, adresse FROM eleve ";
+			String req = "SELECT idMatiere, nom, Module_idModule, Coefficient FROM matiere ";
 			// Connexion
 			DBAction.DBConnexion();
 			// exécution de la requête et init
@@ -28,11 +28,10 @@ public class MatiereDAO {
 				Matiere matiereTemp = new Matiere();
 				
 				// Creation de l'objet eleveTemp à travers le ResultSet BD
-				matiereTemp.setNum(DBAction.getRes().getString(1));
-				matiereTemp.setNo(DBAction.getRes().getInt(2));
-				matiereTemp.setNom(DBAction.getRes().getString(3));
-				matiereTemp.setAge(DBAction.getRes().getInt(4));
-				matiereTemp.setAdresse(DBAction.getRes().getString(5));
+				matiereTemp.setId(DBAction.getRes().getString(1));
+				matiereTemp.setNom(DBAction.getRes().getString(2));
+				matiereTemp.setIdModule(DBAction.getRes().getString(3));
+				matiereTemp.setCoefficient(DBAction.getRes().getString(4));
 				listMatiere.add(matiereTemp);
 				//i = i + 1;
 			}
