@@ -6,7 +6,6 @@ public class Matiere {
 	private String nom;
 	private String idModule;
 	private String Coefficient;
-	//private String Test;
 	public Matiere(String id, String nom, String idModule,String Coefficient){
 		
 		this.id = id;
