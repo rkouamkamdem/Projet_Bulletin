@@ -1,2 +1,3 @@
 Je veux tester un commit, j'écris pour la 1ère fois dans un fichier destiné à GIT.
 La je vais tester un 2eme Commit.
+Je modifie crédit ce jour.
