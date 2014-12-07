@@ -5,17 +5,18 @@ public class Matiere {
 	private String id;
 	private String nom;
 	private String idModule;
-	
-	public Matiere(String id, String nom, String idModule){
+	private String Coefficient;
+	public Matiere(String id, String nom, String idModule,String Coefficient){
 		
 		this.id = id;
 		this.nom = nom;
 		this.idModule = idModule;
+		this.Coefficient = Coefficient;
 	}
 	
 	public Matiere(String id){
 		
-		this(id,"","");
+		this(id,"","","");
 	}
 	
 	public Matiere(){
@@ -46,9 +47,19 @@ public class Matiere {
 		this.idModule = idModule;
 	}
 
+	public String getCoefficient() {
+		return Coefficient;
+	}
+
+	public void setCoefficient(String coefficient) {
+		Coefficient = coefficient;
+	}
+
 	@Override
 	public String toString() {
 		return "Matiere [id=" + id + ", nom=" + nom + ", idModule=" + idModule
-				+ "]";
+				+ ", Coefficient=" + Coefficient + "]";
 	}
+
+	
 }
