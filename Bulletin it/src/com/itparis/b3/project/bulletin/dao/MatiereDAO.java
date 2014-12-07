@@ -23,7 +23,6 @@ public class MatiereDAO {
 			
 			while( DBAction.getRes().next() )
 			{	
-				//int i = 0;
 				//Instanciation de mon objet Matiere
 				Matiere matiereTemp = new Matiere();
 				
@@ -33,7 +32,6 @@ public class MatiereDAO {
 				matiereTemp.setIdModule(DBAction.getRes().getString(3));
 				matiereTemp.setCoefficient(DBAction.getRes().getString(4));
 				listMatiere.add(matiereTemp);
-				//i = i + 1;
 			}
 			// Fermeture de la connexion
 			DBAction.DBClose();
