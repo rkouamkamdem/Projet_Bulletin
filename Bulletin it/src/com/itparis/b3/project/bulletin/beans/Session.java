@@ -79,11 +79,11 @@ public class Session {
 		this.categorie = categorie;
 	}
 
-	public String geteMail() {
+	public String getEmail() {
 		return eMail;
 	}
 
-	public void seteMail(String eMail) {
+	public void setEmail(String eMail) {
 		this.eMail = eMail;
 	}
 
