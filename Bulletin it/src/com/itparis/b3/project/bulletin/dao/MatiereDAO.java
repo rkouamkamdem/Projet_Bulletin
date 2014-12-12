@@ -9,18 +9,21 @@ import com.itparis.b3.project.bulletin.beans.Matiere;
 
 public class MatiereDAO {
 	
-	
+		//Ligne rajoute pour des tests sur eclipses
 		public static ArrayList<Matiere> getAllMatiere() throws SQLException 
 		{
 			
 			ArrayList<Matiere> listMatiere = new ArrayList<Matiere>();
 			
 			String req = "SELECT idMatiere, nom, Module_idModule, Coefficient FROM matiere ";
+			
 			// Connexion
 			DBAction.DBConnexion();
+			
 			// exécution de la requête et init
 			DBAction.setRes(DBAction.getStm().executeQuery(req));
 			
+			//Recupération des matières renvoyées par la base de données.
 			while( DBAction.getRes().next() )
 			{	
 				//Instanciation de mon objet Matiere
