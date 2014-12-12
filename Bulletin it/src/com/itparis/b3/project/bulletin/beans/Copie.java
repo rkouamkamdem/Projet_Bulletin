@@ -1,5 +1,11 @@
 package com.itparis.b3.project.bulletin.beans;
 
+/**
+ * 
+ * @author Bouveti
+ * @version v0.1
+ * 
+ */
 public class Copie {
 
 	private String id;
@@ -8,6 +14,14 @@ public class Copie {
 	private String idEtudiant;
 	private String idMatiere;
 	
+	/**
+	 * 
+	 * @param id
+	 * @param adresse
+	 * @param note
+	 * @param idEtudiant
+	 * @param idMatiere
+	 */
 	public Copie(String id, String adresse, float note, String idEtudiant, String idMatiere){
 		
 		this.id = id;
@@ -17,11 +31,16 @@ public class Copie {
 		this.idMatiere = idMatiere;
 	}
 	
+	/**
+	 * @
+	 */
 	public Copie(String id){
 		
 		this(id,"",0.0f,"","");
 	}
-	
+	/**
+	 * 
+	 */
 	public Copie(){
 		this("");
 	}
@@ -30,6 +49,10 @@ public class Copie {
 		return id;
 	}
 
+	/**
+	 * 
+	 * @param id
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}
