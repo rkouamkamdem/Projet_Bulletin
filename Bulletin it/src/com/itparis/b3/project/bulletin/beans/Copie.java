@@ -7,6 +7,7 @@ package com.itparis.b3.project.bulletin.beans;
  * 
  */
 /*blablabla*/
+	
 public class Copie {
 
 	private String id;
@@ -15,6 +16,7 @@ public class Copie {
 	private String idEtudiant;
 	private String idMatiere;
 	private String Coefficient;
+	
 	/**
 	 * 
 	 * @param id
@@ -22,8 +24,20 @@ public class Copie {
 	 * @param note
 	 * @param idEtudiant
 	 * @param idMatiere
+	 * @param Coefficient
 	 */
+	
 	public Copie(String id, String adresse, float note, String idEtudiant, String idMatiere,String Coefficient){
+	
+	/**
+	 * 
+	 * @param id
+	 * @param adresse
+	 * @param note
+	 * @param idEtudiant
+	 * @param idMatiere
+	 * @param Coefficient
+	 */
 		
 		this.id = id;
 		this.adresse = adresse;

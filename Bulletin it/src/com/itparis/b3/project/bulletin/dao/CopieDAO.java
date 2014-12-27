@@ -325,6 +325,5 @@ public class CopieDAO
 		return result;
 		
 	}
-
-
+	
 }
