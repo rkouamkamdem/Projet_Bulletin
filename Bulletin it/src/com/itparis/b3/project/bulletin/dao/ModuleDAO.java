@@ -6,12 +6,11 @@ import com.itparis.b3.project.bulletin.beans.Module;
 import com.mysql.jdbc.SQLError;
 
 /**
- * 
  * @author Kouam romeo
  * @version v0.1
  * Le 24/12/2014
  */
-public class ModuleDAO 
+public class ModuleDAO
 {
 	/**
 	 * Lister l'ensemble des modules existant en base.
