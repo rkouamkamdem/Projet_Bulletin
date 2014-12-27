@@ -4,16 +4,17 @@ public class Module {
 
 	private String id;
 	private String nom;
-	
-	public Module(String id, String nom){
+	private String Coefficient;
+	public Module(String id, String nom,String Coefficient){
 		
 		this.id = id;
 		this.nom = nom;
+		this.Coefficient = Coefficient;
 	}
 	
 	public Module(String id){
 		
-		this(id,"");
+		this(id,"","");
 	}
 	
 	public Module(){
@@ -37,8 +38,16 @@ public class Module {
 		this.nom = nom;
 	}
 
+	public String getCoefficient() {
+		return Coefficient;
+	}
+
+	public void setCoefficient(String coefficient) {
+		Coefficient = coefficient;
+	}
+
 	@Override
 	public String toString() {
-		return "Module [id=" + id + ", nom=" + nom + "]";
+		return "Module [id=" + id + ", nom=" + nom + " Coefficient=" + Coefficient + " ]";
 	}
 }
