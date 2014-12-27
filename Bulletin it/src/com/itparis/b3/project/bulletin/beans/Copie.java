@@ -1,5 +1,12 @@
 package com.itparis.b3.project.bulletin.beans;
 
+/**
+ * 
+ * @author Bouveti
+ * @version v0.1
+ * 
+ */
+/*blablabla*/
 public class Copie {
 
 	private String id;
@@ -7,21 +14,35 @@ public class Copie {
 	private float note;
 	private String idEtudiant;
 	private String idMatiere;
-	
-	public Copie(String id, String adresse, float note, String idEtudiant, String idMatiere){
+	private String Coefficient;
+	/**
+	 * 
+	 * @param id
+	 * @param adresse
+	 * @param note
+	 * @param idEtudiant
+	 * @param idMatiere
+	 */
+	public Copie(String id, String adresse, float note, String idEtudiant, String idMatiere,String Coefficient){
 		
 		this.id = id;
 		this.adresse = adresse;
 		this.note = note;
 		this.idEtudiant = idEtudiant;
 		this.idMatiere = idMatiere;
+		this.Coefficient = Coefficient;
 	}
 	
+	/**
+	 * @
+	 */
 	public Copie(String id){
 		
-		this(id,"",0.0f,"","");
+		this(id,"",0.0f,"","","");
 	}
-	
+	/**
+	 * 
+	 */
 	public Copie(){
 		this("");
 	}
@@ -30,6 +51,10 @@ public class Copie {
 		return id;
 	}
 
+	/**
+	 * 
+	 * @param id
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -66,9 +91,18 @@ public class Copie {
 		this.idMatiere = idMatiere;
 	}
 	
+	public String getCoefficient() {
+		return Coefficient;
+	}
+
+	public void setCoefficient(String coefficient) {
+		Coefficient = coefficient;
+	}
+
+	
 	@Override
 	public String toString() {
 		return "Copie [id=" + id + ", adresse=" + adresse + ", note=" + note
-				+ ", idEtudiant=" + idEtudiant + ", idMatiere=" + idMatiere + "]";
+				+ ", idEtudiant=" + idEtudiant + ", idMatiere=" + idMatiere + " Coefficient=" + Coefficient + "] ";
 	}
 }
