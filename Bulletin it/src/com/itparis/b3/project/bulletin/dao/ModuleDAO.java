@@ -8,7 +8,7 @@ import com.mysql.jdbc.SQLError;
 /**
  * @author Kouam romeo
  * @version v0.1
- * Le 24/12/2014
+ * Le 27/12/2014
  */
 public class ModuleDAO
 {
