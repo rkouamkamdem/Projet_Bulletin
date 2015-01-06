@@ -2,38 +2,40 @@ package com.itparis.b3.project.bulletin.beans;
 
 public class Enseignement {
 
-	private String idEtudiant;
-	private String idModule;
+	private String idMatiere;
+	private String idProfesseur;
 	
 	public Enseignement(String idEtudiant, String idModule){
 		
-		this.idEtudiant = idEtudiant;
-		this.idModule = idModule;
+		this.idMatiere = idMatiere;
+		this.idProfesseur = idProfesseur;
 	}
 	
 	public Enseignement(){
 		this("","");
 	}
 
-	public String getIdEtudiant() {
-		return idEtudiant;
+	public String getIdMatiere() {
+		return idMatiere;
 	}
 
-	public void setIdEtudiant(String idEtudiant) {
-		this.idEtudiant = idEtudiant;
+	public void setIdMatiere(String idMatiere) {
+		this.idMatiere = idMatiere;
 	}
 
-	public String getIdModule() {
-		return idModule;
+	public String getIdProfesseur() {
+		return idProfesseur;
 	}
 
-	public void setIdModule(String idModule) {
-		this.idModule = idModule;
+	public void setIdProfesseur(String idProfesseur) {
+		this.idProfesseur = idProfesseur;
 	}
 
 	@Override
 	public String toString() {
-		return "Enseignement [idEtudiant=" + idEtudiant + ", idModule="
-				+ idModule + "]";
+		return "Enseignement [idMatiere=" + idMatiere + ", idProfesseur="
+				+ idProfesseur + "]";
 	}
+
+	
 }
