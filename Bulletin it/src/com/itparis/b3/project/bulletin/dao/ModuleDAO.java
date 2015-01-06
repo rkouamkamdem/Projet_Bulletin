@@ -123,7 +123,7 @@ public class ModuleDAO
 			int result = -1;
 			DBAction.DBConnexion();
 
-			String req = "INSERT INTO module (idmodule, nom,coefficient) VALUES('idmodule', 'nom','coefficient')";
+			String req = "INSERT INTO module (idmodule, nom,coefficient) VALUES('"+idmodule+"', '"+nom+"','"+coefficient+"')";
 			try {
 				result = DBAction.getStm().executeUpdate(req);
 			}
@@ -151,7 +151,7 @@ public class ModuleDAO
 			int result = -1;
 			DBAction.DBConnexion();
 
-			String req = "UPDATE module SET nom='nom', coefficient='coefficient WHERE idmodule = 'idmodule' ";
+			String req = "UPDATE module SET nom='"+nom+"', coefficient='"+coefficient+"' WHERE idmodule = "+idmodule;
 			try {
 				result = DBAction.getStm().executeUpdate(req);
 				System.out.println("Requete executee");	
